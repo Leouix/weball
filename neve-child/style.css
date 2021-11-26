@@ -1,0 +1,561 @@
+/*
+Theme Name: Neve Child
+Theme URI: https://themeisle.com/themes/neve/
+Template: neve
+Author: ThemeIsle
+Author URI: https://themeisle.com
+Description: Neve is a super fast, easily customizable, multi-purpose theme. It’s perfect for blogs, small business, startups, agencies, firms, e-commerce shops (WooCommerce storefront) as well as personal portfolio sites and most types of projects. A fully AMP optimized and responsive theme, Neve will load in mere seconds and adapt perfectly on any viewing device. While it is lightweight and has a minimalist design, the theme is highly extendable, it has a highly SEO optimized code, resulting in top rankings in Google search results. Neve works perfectly with Gutenberg and the most popular page builders (Elementor, Brizy, Beaver Builder, Visual Composer, SiteOrigin, Divi). Neve is also WooCommerce ready, responsive, RTL &amp; translation ready. Look no further. Neve is the perfect theme for you!
+Tags: blog,custom-logo,e-commerce,rtl-language-support,grid-layout,one-column,two-columns,custom-background,custom-colors,custom-header,custom-menu,featured-image-header,featured-images,flexible-header,full-width-template,sticky-post,theme-options,threaded-comments,translation-ready,accessibility-ready,wide-blocks,block-styles,footer-widgets,portfolio,left-sidebar,right-sidebar
+Version: 3.0.10.1636117947
+Updated: 2021-11-05 16:12:27
+
+*/
+
+#header-grid .site-logo .site-title {
+    margin-bottom: 0;
+    margin-top: 2px;
+    line-height: 1;
+}
+
+a {
+    transition: all 0.35s ease;
+}
+
+:root {
+    font-family: 'Open Sans', sans-serif;
+}
+main#content {
+    color: #505050;
+    background-color: #f3f3f3;
+}
+h2 {
+    color: #4c34fb;
+}
+section.first-view {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+@media screen and (min-width: 560px) {
+    section.first-view {
+        flex-direction: row;
+    }
+}
+
+section.first-view .first-view-ch {
+    width:100%;
+    max-width:100%;
+}
+@media screen and (min-width: 560px) {
+    section.first-view .first-view-ch {
+        width:50%;
+        max-width:50%;
+    }
+}
+section.first-view .first-view-bg {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background: url('/web-allianse/wp-content/uploads/2019/09/neve-freelancer-12.jpg') repeat scroll center right/cover;
+    border: 0 solid #000;
+    border-radius: 0;
+    min-height: 335px;
+}
+section.first-view .first-view-content {
+    background-color: #4c34fb;
+    padding:35px;
+    color: #f5f5f5;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.first-view .first-view-content__el {
+    margin-bottom:30px;
+}
+section.first-view .first-view-content__el.first-view-content__desc1 {
+    margin-bottom:15px;
+}
+section.first-view .first-view-content__el.first-view-content__button {
+    margin: 20px auto 15px;
+
+}
+section.first-view marquee {
+    color: #787878;
+    margin-top: 15px;
+}
+h4.first-view-content__hello {
+    font-size:13px;
+}
+.first-view-content__title {
+    font-size:32px;
+}
+
+@media screen and (min-width: 560px) {
+
+    section.first-view .first-view-content__el.first-view-content__button {
+        margin-top:inherit;
+        margin-right:inherit;
+        margin-left:inherit;
+        margin-bottom:0;
+    }
+
+
+    section.first-view .first-view-content__el {
+        margin-bottom:42px;
+    }
+    .first-view-content__title {
+        font-size:28px;
+    }
+}
+
+@media screen and (min-width: 698px) {
+    .first-view-content__title {
+        font-size:32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .first-view-content__title {
+        font-size:55px;
+    }
+}
+
+.first-view-content__description {
+
+}
+.first-view-content__button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-style: normal;
+    background: #0f073f;
+    border-radius: 0;
+    color: #f5f5f5;
+    font-weight: 700;
+    width: 145px;
+    display: block;
+}
+.first-view-content__button:hover{
+    color: #4c34fb;
+    background: #fff;
+}
+
+section.regular-section {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 50px auto;
+}
+@media screen and (min-width: 560px) {
+    section.regular-section {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        margin: 65px auto;
+    }
+}
+section.about-me {
+    background-color: #e1e4f1;
+    margin: 65px auto;
+    box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+.about-me-inner {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.second-view {
+    margin: 30px auto;
+    padding-top: 50px;
+}
+
+.second-view img {
+    max-width: 100%;
+    box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+.second-view .first-view-content__desc {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.second-view .first-view-content__desc span {
+    font-weight: 700;
+}
+.second-view .first-view-content__desc1 {
+    text-align: left;
+}
+@media screen and (min-width: 920px) {
+    .second-view {
+        margin: 65px auto;
+    }
+    .second-view .first-view-content__desc1 {
+        text-align: center;
+    }
+    .second-view img {
+        max-width: 45%;
+    }
+    section.about-me {
+        margin: 65px auto;
+        padding: inherit;
+    }
+}
+.second-view p.first-view-content__desc2 {
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+section.about-me .about-me-image {
+    width: 100%;
+    background-image: url('/web-allianse/wp-content/themes/neve-child/images/myself.jpg');
+    background-size: 90%;
+    min-height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section.about-me .about-me-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0;
+}
+section.about-me .about-me-content h2 {
+    margin-bottom: 20px;
+}
+section.about-me .about-me-content h4 {
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 560px) {
+    section.about-me .about-me-image {
+        width: 45%;
+    }
+    section.about-me .about-me-content {
+        max-width: 55%;
+        padding: 35px;
+    }
+    section.about-me .about-me-content h2 {
+        margin-bottom: 30px;
+    }
+    section.about-me .about-me-content h4 {
+        margin-bottom: 30px;
+    }
+}
+section.expirience-meet {
+    min-height: 501px;
+}
+.expirience-meet-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 0;
+}
+
+.expirience-meet-content h2 {
+    line-height: 35px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.expirience-meet-content a.button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    font-style: normal;
+    background: #4c34fb;
+    border-radius: 0;
+    width: 185px;
+    color: #fff;
+    margin: 5px auto 35px;
+}
+.expirience-meet-image {
+    background-image: url('/web-allianse/wp-content/uploads/2019/09/neve-freelancer-15.jpg');
+    background-size: cover;
+    width: 100%;
+    min-height: 300px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 560px) {
+    .expirience-meet-content {
+        padding: 35px;
+        max-width: 55%;
+    }
+    .expirience-meet-content h2 {
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .expirience-meet-image {
+        width: 45%;
+    }
+    .expirience-meet-content a.button {
+        margin-left: 6%;
+    }
+}
+
+section.plan-education ol > li {
+    margin-bottom: 15px;
+}
+
+.section-content__desc1 {
+    margin-bottom:15px;
+}
+
+.regular-section-col {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: 65px auto;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 920px) {
+    .regular-section-col {
+        width: 75%;
+    }
+}
+
+.regular-section-col h2 {
+    text-align: center;
+}
+.video-imitation {
+    width: 800px;
+    height: 480px;
+    display: block;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+section.plan-education-screen {
+    background-image: url('/web-allianse/wp-content/themes/neve-child/images/WA-offer.png');
+    height: 3247px;
+    background-size:cover;
+}
+
+.expirience-meet-content ul li {
+    margin: 10px 25px;
+}
+
+.plan-education-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.plan-education-item__header {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.plan-education-item__header img {
+    max-width: 150px;
+    height: auto;
+}
+
+.plan-education-item__header img.wp-image {
+    max-width: 135px;
+    margin: 15px;
+}
+
+.plan-education-item__header-text {
+    margin-left: 10px;
+}
+
+.plan-education-item__header-text .pseudo-ol {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.plan-education-item__header-text ul {
+    padding-left: 20px;
+}
+
+.plan-education-item__video {
+    width: 750px;
+    height: 450px;
+    background-color: #ccc;
+    box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+.compact-plan-continue {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    margin: 45px auto;
+}
+
+.compact-plan-continue__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+.compact-plan-continue__item img {
+    max-width: 20%;
+    height: 100%;
+}
+
+.compact-plan-continue__item img.php-image {
+
+}
+
+.compact-plan-continue__item .plan-education-item__header-text {
+    flex: 1;
+    margin-left: 45px;
+}
+
+#last-part-education {
+    background-color: #e1e4f1;
+    padding: 65px 0;
+    box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+#last-part-education h3 {
+    text-align: center;
+    color: #3d2ea9;
+    font-size: 24px;
+}
+
+.river-item-wrapper {
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.river-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    margin: 25px auto;
+}
+
+.river-item ul {
+    margin-top: 15px;
+}
+
+.river-item img {
+    box-shadow: 0 1px 4px 1px #858585a8;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e1e4f1;
+    padding-bottom: 30px;
+    margin-top: 85px;
+}
+
+.price-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 1px 4px 1px #a9a9a980;
+    padding: 35px 25px;
+    min-height: 557px;
+    max-width: 278px;
+    background-color: #f3f3f3;
+}
+
+.price-item h3 {
+    margin-bottom: 10px;
+}
+
+.price-item .price {
+    font-size: 20px;
+    border-bottom: 1px solid #5e5e5e;
+    width: 55%;
+    text-align: center;
+    padding: 5px;
+}
+
+.price-item__description ul li {
+    line-height: 1.4;
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+
+.price-item ul {
+    margin: 25px 0;
+    font-size: 16px;
+    list-style: square;
+    padding-left: 15px;
+}
+
+.price-item__button {
+    position: absolute;
+    width: 75%;
+    bottom: 35px;
+    left: auto;
+    right: auto;
+    text-align: center;
+    color: #fff;
+    height: 45px;
+    font-size: 15px;
+    text-transform: uppercase;
+    line-height: 3;
+    font-weight: 700;
+    box-shadow: 0 1px 7px 1px #66626266;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.35s ease-out;
+}
+
+.price-item-2 .price-item__button {
+    background-color: #3bca15;
+}
+
+.price-item-2 .price-item__button:hover {
+    background-color: #30a311;
+}
+
+.price-item-1 .price-item__button {
+    background-color: #e3900d;
+}
+
+.price-item-1 .price-item__button:hover {
+    background-color: #c57d0c;
+}
+
+.price-item-3 .price-item__button {
+    background-color: #f30924;
+}
+
+.price-item-3 .price-item__button:hover {
+    background-color: #c30b20;
+}
+
+.vip-lis {
+    margin-top: 15px;
+}
+
+.regular-section.prices {
+    justify-content: center;
+}
