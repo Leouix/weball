@@ -165,21 +165,38 @@ section.regular-section {
 }
 section.about-me {
     background-color: #e1e4f1;
-    margin: 65px auto;
     box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+@media screen and (min-width: 768px) {
+    section.about-me {
+        margin: 65px auto;
+    }
+
 }
 
 .about-me-inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 85%;
     margin-right: auto;
     margin-left: auto;
+    padding: 35px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .about-me-inner {
+        flex-direction: row;
+    }
+}
+
+.about-me-inner h4 {
+    margin-bottom: 10px;
 }
 
 .second-view {
-    margin: 30px auto;
-    padding-top: 50px;
+    margin: 0 auto;
+    padding-top: 45px;
 }
 
 .second-view img {
@@ -198,7 +215,7 @@ section.about-me {
 .second-view .first-view-content__desc1 {
     text-align: left;
 }
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
     .second-view {
         margin: 65px auto;
     }
@@ -232,7 +249,7 @@ section.about-me .about-me-content {
     flex-direction: column;
     justify-content: space-between;
     max-width: 100%;
-    padding: 0;
+    padding: 35px 0 0 0;
 }
 section.about-me .about-me-content h2 {
     margin-bottom: 20px;
@@ -240,6 +257,40 @@ section.about-me .about-me-content h2 {
 section.about-me .about-me-content h4 {
     margin-bottom: 20px;
 }
+
+.desktop-mode {
+    display: none;
+}
+
+.mobile-mode {
+    display: block;
+}
+
+h4.mobile-mode {
+    order: 0;
+}
+
+h2.mobile-mode {
+    order: 1;
+}
+
+.about-me-image {
+    order: 2;
+}
+
+.about-me-content {
+    order: 3;
+}
+
+@media screen and (min-width: 768px) {
+    .desktop-mode {
+        display: block;
+    }
+    .mobile-mode {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 560px) {
     section.about-me .about-me-image {
         width: 45%;
@@ -283,8 +334,15 @@ section.expirience-meet {
     border-radius: 0;
     width: 185px;
     color: #fff;
-    margin: 5px auto 35px;
+    margin: 20px auto 35px;
 }
+
+@media screen and (min-width: 768px) {
+    .expirience-meet-content a.button {
+        margin: 5px auto 35px;
+    }
+}
+
 .expirience-meet-image {
     background-image: url('/web-allianse/wp-content/uploads/2019/09/neve-freelancer-15.jpg');
     background-size: cover;
@@ -322,11 +380,12 @@ section.plan-education ol > li {
     display: flex;
     flex-direction: column;
     width: 85%;
-    margin: 65px auto;
     margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-@media screen and (min-width: 920px) {
+@media screen and (min-width: 768px) {
     .regular-section-col {
         width: 75%;
     }
@@ -343,14 +402,32 @@ section.plan-education ol > li {
     margin: 0 auto;
 }
 
+.regular-section-col.plan-education {
+    padding: 55px 0 0;
+}
+
+.regular-section-col.plan-education h2 {
+    margin-bottom: 10px;
+}
 section.plan-education-screen {
     background-image: url('/web-allianse/wp-content/themes/neve-child/images/WA-offer.png');
     height: 3247px;
     background-size:cover;
 }
 
+.expirience-meet-content ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
 .expirience-meet-content ul li {
-    margin: 10px 25px;
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .expirience-meet-content ul li {
+        margin: 10px 25px;
+    }
 }
 
 .plan-education-item {
@@ -361,61 +438,125 @@ section.plan-education-screen {
 }
 
 .plan-education-item__header {
-    display: flex;
-    flex-direction: row;
-    width: 750px;
-    align-items: center;
+    display: block;
+    width: 100%;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .plan-education-item__header {
+        display: flex;
+        flex-direction: row;
+        width: 750px;
+        align-items: center;
+        margin-bottom: 15px;
+    }
 }
 
 .plan-education-item__header img {
-    max-width: 150px;
+    max-width: 125px;
     height: auto;
 }
 
+@media screen and (min-width: 768px) {
+    .plan-education-item__header img {
+        max-width: 150px;
+    }
+}
+
 .plan-education-item__header img.wp-image {
-    max-width: 135px;
+    max-width: 110px;
     margin: 15px;
 }
 
+@media screen and (min-width: 768px) {
+    .plan-education-item__header img.wp-image {
+        max-width: 135px;
+        margin: 15px;
+    }
+}
+
 .plan-education-item__header-text {
-    margin-left: 10px;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .plan-education-item__header-text {
+        margin-left: 10px;
+        margin-bottom: inherit;
+    }
 }
 
 .plan-education-item__header-text .pseudo-ol {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-.plan-education-item__header-text ul {
-    padding-left: 20px;
+@media screen and (min-width: 768px) {
+    .plan-education-item__header-text .pseudo-ol {
+        font-size: 18px;
+    }
 }
 
+
+
+@media screen and (min-width: 768px) {
+    .plan-education-item__header-text ul {
+        padding-left: 20px;
+    }
+}
+
+.plan-education-item__header-text ul li {
+    font-size: 14px;
+}
 .plan-education-item__video {
-    width: 750px;
-    height: 450px;
-    background-color: #ccc;
+    width: 100%;
+    height: auto;
     box-shadow: 0 1px 9px 1px #858585a8;
 }
 
 .compact-plan-continue {
     display: flex;
     flex-direction: column;
-    max-width: 90%;
-    margin: 45px auto;
+    max-width: 100%;
+    width: 100%;
+    margin: 45px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+    .compact-plan-continue {
+        max-width: 90%;
+    }
 }
 
 .compact-plan-continue__item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .compact-plan-continue__item {
+        flex-direction: row;
+        padding: 25px;
+    }
 }
 
 .compact-plan-continue__item img {
-    max-width: 20%;
+    max-width: 60%;
+    width: 75%;
     height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .compact-plan-continue__item img {
+        max-width: 20%;
+    }
 }
 
 .compact-plan-continue__item img.php-image {
@@ -423,20 +564,40 @@ section.plan-education-screen {
 }
 
 .compact-plan-continue__item .plan-education-item__header-text {
-    flex: 1;
-    margin-left: 45px;
+    margin: 15px 0 45px;
+}
+
+@media screen and (min-width: 768px) {
+    .compact-plan-continue__item .plan-education-item__header-text {
+        flex: 1;
+        margin-left: 45px;
+    }
 }
 
 #last-part-education {
     background-color: #e1e4f1;
-    padding: 65px 0;
+    padding: 45px 0;
     box-shadow: 0 1px 9px 1px #858585a8;
+}
+
+@media screen and (min-width: 768px) {
+    #last-part-education {
+        padding: 65px 0;
+    }
 }
 
 #last-part-education h3 {
     text-align: center;
     color: #3d2ea9;
-    font-size: 24px;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    #last-part-education h3 {
+        font-size: 24px;
+        margin-bottom: inherit;
+    }
 }
 
 .river-item-wrapper {
@@ -447,14 +608,27 @@ section.plan-education-screen {
 
 .river-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 85%;
-    margin: 25px auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .river-item {
+        flex-direction: row;
+        margin: 25px auto;
+        width: 85%;
+    }
 }
 
 .river-item ul {
-    margin-top: 15px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .river-item ul {
+        margin-top: 15px;
+    }
 }
 
 .river-item img {
@@ -463,11 +637,20 @@ section.plan-education-screen {
 
 .prices {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     background-color: #e1e4f1;
     padding-bottom: 30px;
-    margin-top: 85px;
+    margin-top: 55px;
+    width: 100%;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .prices {
+        flex-direction: row;
+        margin-top: 85px;
+    }
 }
 
 .price-item {
@@ -483,8 +666,17 @@ section.plan-education-screen {
     background-color: #f3f3f3;
 }
 
-.price-item h3 {
+#prices .price-item h3 {
+    font-size: 22px;
     margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    #prices .price-item h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
 }
 
 .price-item .price {
@@ -558,4 +750,10 @@ section.plan-education-screen {
 
 .regular-section.prices {
     justify-content: center;
+}
+
+.lx-footer {
+    width: 100%;
+    min-height: 150px;
+    background-color: #181818;
 }

@@ -29,9 +29,11 @@ get_header();
     <section class="about-me">
 
         <div class="about-me-inner">
+            <h4 class="mobile-mode"><strong>Section Overline</strong></h4>
+            <h2 class="mobile-mode">About Me</h2>
             <div class="about-me-content">
-                <h4><strong>Section Overline</strong></h4>
-                <h2>About Me</h2>
+                <h4 class="desktop-mode"><strong>Section Overline</strong></h4>
+                <h2 class="desktop-mode">About Me</h2>
                 <p class="section-content__desc1">Меня зовут Лев, мой рабочий псевдоним Leouix. Занимаюсь веб-разработкой лет 10 или типа того. По образованию я юрист, но по профессии работать мне не понравилось, стал заниматься тем, к чему больше душа лежала. </p>
                 <p class="section-content__desc1">
                     Так я сделал свой первый сайт и стал интересоваться его устройством. Сейчас я работаю в международной компании бэкендером, в группе с другими разработчиками с разных стран. </p>
@@ -61,7 +63,9 @@ get_header();
                     </ul>
                 </div>
             </div>
-            <div class="plan-education-item__video"></div>
+            <div class="plan-education-item__video">
+                <video src="/web-allianse/wp-content/themes/neve-child/videos/Hosting-localhost-domains-compress.mp4"></video>
+            </div>
         </div>
         <div class="plan-education-item plan-education-item-2">
             <div class="plan-education-item__header">
@@ -74,7 +78,9 @@ get_header();
                     </ul>
                 </div>
             </div>
-            <div class="plan-education-item__video"></div>
+            <div class="plan-education-item__video">
+                <video src="/web-allianse/wp-content/themes/neve-child/videos/Hosting-localhost-domains-compress.mp4"></video>
+            </div>
         </div>
         <div class="plan-education-item plan-education-item-3">
             <div class="plan-education-item__header">
@@ -90,11 +96,13 @@ get_header();
                     </ul>
                 </div>
             </div>
-            <div class="plan-education-item__video"></div>
+            <div class="plan-education-item__video">
+                <video src="/web-allianse/wp-content/themes/neve-child/videos/Hosting-localhost-domains-compress.mp4"></video>
+            </div>
         </div>
         <div class="compact-plan-continue">
             <div class="compact-plan-continue__item html-css-item">
-                <img src="/web-allianse/wp-content/themes/neve-child/images/html-css-icon.png" alt="Как самой научиться делать сайт">
+                <img src="/web-allianse/wp-content/themes/neve-child/images/html-css.png" alt="Как самой научиться делать сайт">
                 <div class="plan-education-item__header-text">
                     <div class="pseudo-ol">4. HTML, CSS - 1 неделя на изучение</div>
                     <ul>
@@ -203,7 +211,7 @@ get_header();
         </div>
     </section>
 
-    <section class="regular-section-col after-plan">
+    <section class="regular-section-col after-plan" style="display: none">
         <h2><strong>Всего будет:</strong></h2>
         <ul>
             <li>3 недели обучения</li>
@@ -252,4 +260,5 @@ get_header();
     </script>
 
 <?php
+
 get_footer();
