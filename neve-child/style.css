@@ -760,19 +760,42 @@ section.plan-education-screen {
     width: 100%;
     background-color: #100f2b;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
     padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .lx-footer-top {
+        flex-direction: row;
+    }
 }
 
 .footer-logo-element {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    width: 100%;
+    margin-bottom: 25px;
 }
+
+@media screen and (min-width: 768px) {
+    .footer-logo-element {
+        width: inherit;
+        margin-bottom: inherit;
+    }
+}
+
 .footer-logo-element img {
     margin-right: 15px;
+    margin-left: -3px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-logo-element img {
+        margin-left: 0;
+    }
 }
 
 .site-info {
@@ -789,16 +812,31 @@ section.plan-education-screen {
 
 .footer-menu-contacts {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
     align-items: flex-end;
-    padding: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-menu-contacts {
+        flex-direction: column;
+        padding: 0 5px;
+    }
 }
 
 .footer-contacts {
     text-align: right;
-    margin: 10px 0 0;
+    margin: 0;
     line-height: 1.7;
 }
+
+@media screen and (min-width: 768px) {
+    .footer-contacts {
+        margin: 10px 0 0;
+    }
+}
+
 .footer-contacts p {
     margin-bottom: 0;
     font-size: 12px;
@@ -820,12 +858,24 @@ section.plan-education-screen {
 
 .footer-menu ul#menu-freelancer-main-menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-menu ul#menu-freelancer-main-menu {
+        flex-direction: row;
+    }
 }
 
 .footer-menu ul#menu-freelancer-main-menu li {
-    margin-left: 35px;
+    margin-left: 0;
     font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-menu ul#menu-freelancer-main-menu li {
+        margin-left: 35px;
+    }
 }
 
 .footer-menu ul#menu-freelancer-main-menu li a {
@@ -850,22 +900,49 @@ section.plan-education-screen {
 
 .lx-footer-bottom {
     display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
     align-items: center;
     background-color: #0a091b;
-    padding: 15px 25px;
+
     font-size: 12px;
+
+    flex-direction: column-reverse;
+    padding: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .lx-footer-bottom {
+        flex-direction: row;
+        padding: 15px 25px;
+    }
 }
 
 .lx-footer-bottom .powered-by {
     font-size: 13px;
     min-width: 200px;
+
+    text-align: center;
+    margin: 15px 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .lx-footer-bottom .powered-by {
+        margin: 0;
+        text-align: left;
+    }
 }
 
 .lx-footer-bottom .copyrights {
     line-height: 1.4;
     text-align: center;
+    order: -1;
+}
+
+@media screen and (min-width: 768px) {
+    .lx-footer-bottom .copyrights {
+        order: 0;
+    }
 }
 
 .lx-footer-bottom .copyrights p {
@@ -875,10 +952,21 @@ section.plan-education-screen {
 .lx-footer-bottom .social-services {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     min-width: 200px;
 }
+
+@media screen and (min-width: 768px) {
+    .lx-footer-bottom .social-services {
+        justify-content: right;
+    }
+}
+
 .lx-footer-bottom .social-services img {
     width: 25px;
     margin-left: 15px;
+}
+
+.lx-footer-bottom .social-services img:first-child {
+    margin-left: 0;
 }
