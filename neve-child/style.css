@@ -518,6 +518,12 @@ section.plan-education-screen {
     box-shadow: 0 1px 9px 1px #858585a8;
 }
 
+@media screen and (min-width: 768px) {
+    .plan-education-item__video {
+        width: 80%;
+    }
+}
+
 .compact-plan-continue {
     display: flex;
     flex-direction: column;
@@ -790,6 +796,7 @@ section.plan-education-screen {
 .footer-logo-element img {
     margin-right: 15px;
     margin-left: -3px;
+    max-width: 75px;
 }
 
 @media screen and (min-width: 768px) {
@@ -807,7 +814,7 @@ section.plan-education-screen {
 }
 .site-description {
     font-size: 13px;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .footer-menu-contacts {
@@ -839,7 +846,7 @@ section.plan-education-screen {
 
 .footer-contacts p {
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .footer-contacts p a {
@@ -963,8 +970,8 @@ section.plan-education-screen {
 }
 
 .lx-footer-bottom .social-services img {
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
 }
 
 .lx-footer-bottom .social-services .first-social-icon {
