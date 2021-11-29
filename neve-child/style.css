@@ -753,7 +753,132 @@ section.plan-education-screen {
 }
 
 .lx-footer {
+    color: #fff;
+}
+
+.lx-footer-top {
     width: 100%;
-    min-height: 150px;
-    background-color: #181818;
+    background-color: #100f2b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px;
+}
+
+.footer-logo-element {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.footer-logo-element img {
+    margin-right: 15px;
+}
+
+.site-info {
+    line-height: 1.5;
+}
+.site-name {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.site-description {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.footer-menu-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 5px;
+}
+
+.footer-contacts {
+    text-align: right;
+    margin: 10px 0 0;
+    line-height: 1.7;
+}
+.footer-contacts p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.footer-contacts p a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-contacts p a:hover {
+    color: #644fff;
+}
+
+.footer-contacts p span {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer-menu ul#menu-freelancer-main-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-menu ul#menu-freelancer-main-menu li {
+    margin-left: 35px;
+    font-size: 13px;
+}
+
+.footer-menu ul#menu-freelancer-main-menu li a {
+    color: #fff;
+    position: relative;
+}
+
+.footer-menu ul#menu-freelancer-main-menu li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    border-bottom: 1px solid #fff;
+    transition: all 0.25s ease-out;
+}
+
+.footer-menu ul#menu-freelancer-main-menu li a:hover:before {
+    width: 100%;
+}
+
+.lx-footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a091b;
+    padding: 15px 25px;
+    font-size: 12px;
+}
+
+.lx-footer-bottom .powered-by {
+    font-size: 13px;
+    min-width: 200px;
+}
+
+.lx-footer-bottom .copyrights {
+    line-height: 1.4;
+    text-align: center;
+}
+
+.lx-footer-bottom .copyrights p {
+    margin-bottom: 0;
+}
+
+.lx-footer-bottom .social-services {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    min-width: 200px;
+}
+.lx-footer-bottom .social-services img {
+    width: 25px;
+    margin-left: 15px;
 }

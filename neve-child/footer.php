@@ -16,15 +16,42 @@
 do_action( 'neve_before_primary_end' ); ?>
 
 </main><!--/.neve-main-->
+<footer class="lx-footer">
+    <div class="lx-footer-top">
+        <div class="footer-logo-element">
+            <img src="/web-allianse/wp-content/themes/neve-child/images/wa-footer-logo.png" alt="Реальная удаленная работа">
+            <div class="site-info">
+                <div class="site-name">Web Alliance</div>
+                <div class="site-description">Работай удаленно</div>
+            </div>
+        </div>
+        <div class="footer-menu-contacts">
+            <div class="footer-menu">
+                <?php wp_nav_menu(); ?>
+            </div>
+            <div class="footer-contacts">
+                <p>Skype: <a href="https://join.skype.com/invite/zs2blwZV7Rjd" target="_blank">Lev Starikov</a></p>
+                <p>Zoom: <span>Leo Stann</span></p>
+            </div>
+        </div>
 
-<div class="lx-footer">
+    </div>
+    <div class="lx-footer-bottom">
+        <div class="powered-by">Разработано Leouix</div>
+        <div class="copyrights">
+            <p>Все права защищены 2021 год</p>
+            <p>Политика конфиденциальности</p>
+        </div>
+        <div class="social-services">
+            <img src="/web-allianse/wp-content/themes/neve-child/images/vk-icon-i.png" alt="Реальная удаленная работа на дому">
+            <img src="/web-allianse/wp-content/themes/neve-child/images/instagram-icon-i.png" alt="Работа на удаленке">
+            <img src="/web-allianse/wp-content/themes/neve-child/images/whatsapp-icon-1-i.png" alt="Подработка удаленно">
+            <img src="/web-allianse/wp-content/themes/neve-child/images/telegram-icon-i.png" alt="Реальная удаленная работа на дому через интернет">
+        </div>
+    </div>
+</footer>
 
-    <?php
-    the_custom_logo();
-    wp_nav_menu();
-    ?>
-</div>
-
+<img src="/web-allianse/wp-content/themes/neve-child/images/footer.png" alt="" style="display:none">
 <?php
 
 /**
@@ -42,29 +69,7 @@ do_action( 'neve_after_primary' );
  * @param bool   $status Whether the component should be displayed or not.
  * @param string $context The context name.
  */
-if ( apply_filters( 'neve_filter_toggle_content_parts', true, 'footer' ) === true ) {
 
-    /**
-     * Executes actions before the footer was rendered.
-     *
-     * @since 1.0.0
-     */
-    do_action( 'neve_before_footer_hook' );
-
-    /**
-     * Executes the rendering function for the footer.
-     *
-     * @since 1.0.0
-     */
-    do_action( 'neve_do_footer' );
-
-    /**
-     * Executes actions after the footer was rendered.
-     *
-     * @since 1.0.0
-     */
-    do_action( 'neve_after_footer_hook' );
-}
 ?>
 
 </div><!--/.wrapper-->
