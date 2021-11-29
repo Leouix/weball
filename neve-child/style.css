@@ -964,9 +964,15 @@ section.plan-education-screen {
 
 .lx-footer-bottom .social-services img {
     width: 25px;
-    margin-left: 15px;
+    height: 25px;
 }
 
-.lx-footer-bottom .social-services img:first-child {
+.lx-footer-bottom .social-services .first-social-icon {
     margin-left: 0;
+}
+
+.lx-footer-bottom .social-services a {
+    width: 25px;
+    height: 25px;
+    margin-left: 15px;
 }

@@ -13,7 +13,11 @@
  *
  * @since 1.0.4
  */
-do_action( 'neve_before_primary_end' ); ?>
+do_action( 'neve_before_primary_end' );
+
+$wsp_msg = urlencode('Привет, Лев! Я с сайта Web Allianse');
+
+?>
 
 </main><!--/.neve-main-->
 <footer class="lx-footer">
@@ -43,10 +47,18 @@ do_action( 'neve_before_primary_end' ); ?>
             <p>Политика конфиденциальности</p>
         </div>
         <div class="social-services">
-            <img src="/web-allianse/wp-content/themes/neve-child/images/vk-icon-i.png" alt="Реальная удаленная работа на дому">
-            <img src="/web-allianse/wp-content/themes/neve-child/images/instagram-icon-i.png" alt="Работа на удаленке">
-            <img src="/web-allianse/wp-content/themes/neve-child/images/whatsapp-icon-1-i.png" alt="Подработка удаленно">
-            <img src="/web-allianse/wp-content/themes/neve-child/images/telegram-icon-i.png" alt="Реальная удаленная работа на дому через интернет">
+            <a class="first-social-icon" href="https://vk.com/id335137454" target="_blank" title="Мой Вк">
+                <img src="/web-allianse/wp-content/themes/neve-child/images/vk-icon-i.png" alt="Реальная удаленная работа на дому" >
+            </a>
+            <a href="https://instagram.com/vdol_po_ulice" target="_blank" title="Мой Instagram">
+                <img src="/web-allianse/wp-content/themes/neve-child/images/instagram-icon-i.png" alt="Работа на удаленке" >
+            </a>
+            <a href="https://wa.me/79522099524?text=<?=$wsp_msg?>" target="_blank" title="Мой Whatsapp">
+                <img src="/web-allianse/wp-content/themes/neve-child/images/whatsapp-icon-1-i.png" alt="Подработка удаленно" >
+            </a>
+            <a href="https://t.me/leouix" target="_blank" title="Мой Telegram">
+                <img src="/web-allianse/wp-content/themes/neve-child/images/telegram-icon-i.png" alt="Реальная удаленная работа на дому через интернет" >
+            </a>
         </div>
     </div>
 </footer>
